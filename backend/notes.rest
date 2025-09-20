@@ -1,0 +1,37 @@
+### GET request to example server
+
+GET http://localhost:3001/api/notes
+Accept: application/json
+
+###
+
+GET http://localhost:3001
+
+###
+
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+  "content": "Postman is ok for testing the backend",
+  "important": true
+}
+
+###
+
+GET localhost:3001/api/notes/3
+Accept: application/json
+
+###
+
+DELETE http://localhost:3001/api/notes/1
+
+### test middleware function
+
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+  "content": "Postman is ok for testing the backend",
+  "important": true
+}
